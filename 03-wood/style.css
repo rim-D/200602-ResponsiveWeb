@@ -68,7 +68,7 @@ a {
 
 
 /* Components */
-/******* header�곸뿭 ********/
+/******* header영역 ********/
 .header {
     background: url(images/header-bg.png) no-repeat;
     background-position: center;
@@ -116,7 +116,7 @@ a {
     padding-bottom: 40px;
 }
 
-/******* section�곸뿭 ********/
+/******* section영역 ********/
 .thumbnail {
     background-color: #ccc;
     color: orange;
@@ -143,7 +143,7 @@ a {
     text-transform: capitalize;
 }
 
-/******* footer �곸뿭 ********/
+/******* footer 영역 ********/
 .footer {
     text-align: center;
     padding: 50px;
@@ -159,7 +159,7 @@ a {
 
 
 
-/* ================= 誘몃뵒�댁옘由� ================= */
+/* ================= 미디어쿼리 ================= */
 /* ================= maxwidth 960px ================= */
 @media screen and (max-width: 960px) {
     :root {
