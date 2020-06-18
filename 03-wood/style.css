@@ -42,15 +42,13 @@ a {
 .l_row {
     margin: 0 -15px;
     padding: 30px 0;
+    margin-bottom: -30px;
 }
 
 .l_col {
-    padding: 0 15px;
+    width: 33.33333333%;
+    padding: 0 15px 30px 15px;
     float: left;
-}
-
-.l_col_4 {
-    width: 33.33%;
 }
 
 /* Commons */
@@ -70,11 +68,11 @@ a {
 
 
 /* Components */
-/******* header영역 ********/
+/******* header�곸뿭 ********/
 .header {
     background: url(images/header-bg.png) no-repeat;
+    background-position: center;
     background-size: cover;
-
 }
 
 .container {
@@ -91,7 +89,7 @@ a {
 .container h1 {
     display: inline-block;
     font-weight: normal;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.2rem;
     text-transform: uppercase;
     margin-bottom: 40px;
     position: relative;
@@ -112,12 +110,13 @@ a {
 }
 
 .container p {
+    justify-content: ;
     line-height: 25px;
     max-width: 500px;
     padding-bottom: 40px;
 }
 
-/******* section영역 ********/
+/******* section�곸뿭 ********/
 .thumbnail {
     background-color: #ccc;
     color: orange;
@@ -144,12 +143,98 @@ a {
     text-transform: capitalize;
 }
 
-/******* footer 영역 ********/
+/******* footer �곸뿭 ********/
 .footer {
     text-align: center;
     padding: 50px;
     border-top: 3px solid #ccc;
     color: #bbb;
-    font-size: 12px;
-    letter-spacing: 20px;
+    font-size: 0.75em;
+    letter-spacing: 1.25em;
+}
+
+
+
+
+
+
+
+/* ================= 誘몃뵒�댁옘由� ================= */
+/* ================= maxwidth 960px ================= */
+@media screen and (max-width: 960px) {
+    :root {
+        font-size: 20px;
+    }
+
+    .l_wrapper {
+        width: auto;
+    }
+
+     /* Components */
+     .container {
+        background-image: none;
+        border-width: 15px 15px 0 15px;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .container h1 strong {
+        display: block;
+        margin-right: 0;
+    }
+
+    .container p {
+        margin: 0 auto;
+    }
+
+
+
+
+/* ================= maxwidth 767px ================= */
+@media screen and (max-width: 767px) {
+    /* Layouts */
+    .l_wrapper {
+        width: auto;
+    }
+
+    .l_row {
+        margin: 0 -15px;
+        padding: 30px 15px;
+        margin-bottom: -30px;
+    }
+
+    .l_col {
+        width: 50%;
+        padding: 0 15px 30px 15px;
+        float: left;
+    }
+
+    /* Components */
+    .thumbnail-box img {
+        width: 100%;
+    }
+
+    .footer {
+        letter-spacing: 0.1em;
+    }
+
+}
+
+
+
+
+    
+/* ================= maxwidth 520px ================= */
+@media screen and (max-width: 520px) {
+    /* Layouts */
+    .l_col {
+        width: 100%;
+    }
+
+    /* Components */
+    .container h1 {
+        display: block;
+    }
+
+
 }
