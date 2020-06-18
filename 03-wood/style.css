@@ -209,6 +209,10 @@ a {
         float: left;
     }
 
+    .container {
+        padding: 10px 10px 0 10px;
+    }
+
     /* Components */
     .thumbnail-box img {
         width: 100%;
@@ -224,8 +228,8 @@ a {
 
 
     
-/* ================= maxwidth 520px ================= */
-@media screen and (max-width: 520px) {
+/* ================= maxwidth 640px ================= */
+@media screen and (max-width: 640px) {
     /* Layouts */
     .l_col {
         width: 100%;
