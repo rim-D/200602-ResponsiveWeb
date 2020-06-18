@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Points</title>
+    <style>
+        body, div, ol, h1, h3, span, em {
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .brandPoints {
+            background-color: #ddd;
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        .tittle {
+            text-align: center;
+            font-size: 68px;
+            color: rgb(43, 43, 43);
+            padding: 0.5em;
+            line-height: 1;
+        }
+
+        .brandPoints-list{
+            width: auto;
+            margin: 0 -10px;
+            padding: 0 50px 50px;
+            box-sizing: border-box;
+        }
+
+        .item{
+            width: 50%;
+            /* background-color: blueviolet; */
+            padding: 0 10px;
+            box-sizing: border-box;
+        }
+
+        .item:nth-child(even){
+            margin-left: auto;
+            margin: -50px 0 -50px auto;
+        }
+
+        .point{
+            background-color: coral;
+            /* height: 150px; */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .starbucks{
+            background-color: #0a4a34;
+        }
+
+        .hollys{
+            background-color: #8f0214;
+        }
+
+        .tom{
+            background-color: #5c1916;
+        }
+
+        .coffine{
+            background-color: #550062;
+        }
+        
+
+        .pointWrap{
+            color: #fff;
+        }
+
+        .pointWrap h3{
+            color: rgba(235,235,235,0.4);
+            margin: 10px 0;
+        }
+
+        .pointWrap img{
+            width: 50px;
+            height: 50px;
+            vertical-align: top;
+        }
+
+        .pointWrap em{
+            display: block;
+            font-style: normal;
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .pointWrap span{
+            color: rgba(235,235,235,0.8);
+        }
+
+        .pointWrap span:before{
+            content: '+';
+            display: inline-block;
+            margin-right: 5px;
+        }
+
+        .pointWrap span:after{
+            content: 'points';
+            display: inline-block;
+            margin-left: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="brandPoints">
+        <h1 class="tittle">Brand Points</h1>
+        <ol class="brandPoints-list">
+            <li class="item">
+                <div class="point starbucks">
+                    <div class="pointWrap">
+                        <img src="images/starbucks.png" alt="스타벅스">
+                        <h3>Starbucks Coffee</h3>
+                        <em>12345</em>
+                        <span>345</span>
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="point hollys">
+                    <div class="pointWrap">
+                        <img src="images/hollys.png" alt="스타벅스">
+                        <h3>Hollys Coffee</h3>
+                        <em>17234</em>
+                        <span>74</span>
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="point tom">
+                    <div class="pointWrap">
+                        <img src="images/tomntoms.png" alt="스타벅스">
+                        <h3>Tom N Tom Coffee</h3>
+                        <em>6945</em>
+                        <span>75</span>
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="point coffine">
+                    <div class="pointWrap">
+                        <img src="images/coffine.png" alt="스타벅스">
+                        <h3>Coffine</h3>
+                        <em>1294</em>
+                        <span>92</span>
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="point starbucks">
+                    <div class="pointWrap">
+                        <img src="images/starbucks.png" alt="스타벅스">
+                        <h3>Starbucks Coffee</h3>
+                        <em>12345</em>
+                        <span>345</span>
+                    </div>
+                </div>
+            </li>
+            
+        </ol>
+    </div>
+
+</body>
+</html>
