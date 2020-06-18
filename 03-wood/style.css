@@ -1,0 +1,155 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: top;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Typograph */
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+/* Layouts */
+.l_wrapper {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.l_row {
+    margin: 0 -15px;
+    padding: 30px 0;
+}
+
+.l_col {
+    padding: 0 15px;
+    float: left;
+}
+
+.l_col_4 {
+    width: 33.33%;
+}
+
+/* Commons */
+.clearfix::before,
+.clearfix::after {
+    content: ' ';
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+.hide {
+    display: none;
+}
+
+
+/* Components */
+/******* header영역 ********/
+.header {
+    background: url(images/header-bg.png) no-repeat;
+    background-size: cover;
+
+}
+
+.container {
+    background-image: url(images/container-bg.png);
+    background-repeat: no-repeat;
+    background-position: right 30px top 30px;
+    border-width: 30px 30px 0 30px;
+    border-style: solid;
+    padding: 40px 40px 0 40px;
+    margin-top: 100px;
+    color: orange;
+}
+
+.container h1 {
+    display: inline-block;
+    font-weight: normal;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.container h1 strong {
+    margin-right: 0.4em;
+}
+
+.container h1::after {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -13px;
+    height: 5px;
+    background-color: currentColor;
+}
+
+.container p {
+    line-height: 25px;
+    max-width: 500px;
+    padding-bottom: 40px;
+}
+
+/******* section영역 ********/
+.thumbnail {
+    background-color: #ccc;
+    color: orange;
+}
+
+.thumbnail-box {
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.thumbnail-box a {
+    display: block;
+}
+
+.thumbnail-box p {
+    height: 50px;
+    border-top: 3px solid;
+    background-image: url(images/play.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    line-height: 50px;
+    padding-left: 25px;
+    text-transform: capitalize;
+}
+
+/******* footer 영역 ********/
+.footer {
+    text-align: center;
+    padding: 50px;
+    border-top: 3px solid #ccc;
+    color: #bbb;
+    font-size: 12px;
+    letter-spacing: 20px;
+}
