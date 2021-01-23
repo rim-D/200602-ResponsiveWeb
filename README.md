@@ -5,6 +5,12 @@
 ### 기술스택
 `HTML5` `CSS3` `Media Query`
 
+### 00-gitHub
+반응형페이지 gird system (12 col) 이용하여 제작
+gitHub 소개페이지
+
+Link: https://rim-d.github.io/200602-ResponsiveWeb/06-GitHub-Responsive-master
+
 ### 01-pixar(20200626)
 반응형페이지 gird system (12 col) 이용하여 제작
 픽사 작품 소개페이지
